@@ -1,3 +1,6 @@
+//FUNCIONAMIENTO DE SENSOR DE COMPAS HT
+//INTELIROBOT ESCUELA DE ROBÓTICA SLP
+//intelirobot.com.mx
 import lejos.nxt.addon.*;
 import lejos.nxt.*;
 
