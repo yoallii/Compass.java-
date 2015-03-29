@@ -29,16 +29,6 @@ public class Compass
 
 			}
 
-			if (sensor <= 0)
-			{
-
-				Motor.A.setSpeed(450);
-				Motor.A.forward();
-				Motor.C.setSpeed(450);
-				Motor.C.backward();
-
-			}
-
 			if (sensor >= 0)
 			{
 
@@ -46,6 +36,16 @@ public class Compass
 				Motor.A.backward();
 				Motor.C.setSpeed(450);
 				Motor.C.forward();
+
+			}
+
+			if (sensor <= 0)
+			{
+
+				Motor.C.setSpeed(450);
+				Motor.C.forward();
+				Motor.A.setSpeed(450);
+				Motor.A.backward();
 
 			}
 			
