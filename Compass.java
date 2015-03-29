@@ -3,7 +3,7 @@
 //intelirobot.com.mx
 import lejos.nxt.addon.*;
 import lejos.nxt.*;
-
+import lejos.util.*;
 public class Compass
 {
 
@@ -15,8 +15,11 @@ public class Compass
 		while(true)
 		{
 		
-			LCD.drawInt((int)sensor.getDegreesCartesian(),1,1);		
-			LCD.clear();	
+			LCD.drawInt((int)sensor.getDegreesCartesian(),1,1);	
+			LCD.clearDisplay();
+			Delay.msDelay(10);			
+
+			
 		} 
 				
 	}
