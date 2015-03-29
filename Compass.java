@@ -15,9 +15,8 @@ public class Compass
 	
 		while(true)
 		{
-			
-			LCD.drawInt((int)sensor.getDegrees(),1,1);
-			LCD.drawInt((int)sensor.getDegreesCartesian(),1,3);		
+		
+			LCD.drawInt((int)sensor.getDegreesCartesian(),1,1);		
 			
 		} 
 				
