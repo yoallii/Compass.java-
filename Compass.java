@@ -14,6 +14,7 @@ public class Compass
 	
 		while(true)
 		{
+
 		
 				
 			LCD.clearDisplay();
@@ -21,8 +22,16 @@ public class Compass
 			Delay.msDelay(100);			
 
 			
-		} 
-				
+		if(sensor.getDegreesCartesian()<30)
+			{
+			m.frontAbackB(800);
+			}
+		if(senzor.getDegreesCartesian()>120)
+		{
+			m.avanzarAC(800);
+		}
+
+		}	
 	}
 
 }
